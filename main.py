@@ -7,7 +7,7 @@ posts = [
         'author': 'Kamil',
         'title': 'First test post',
         'content': 'First test post content',
-        'date_posted': 'March 23, 2023'
+        'date_posted': '23/03/2023'
     }
 ]
 
