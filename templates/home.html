@@ -4,51 +4,33 @@
 <div class="media content-section">
   <div class="container-fluid">
     <div class="row mx-0">
-      <div class="col">
-        <div class="media-body">
-          <small class="font-weight-light ">Date</small>
+      <div class="col-3">
+        <div>
+          <small class="font-weight-bold text-light">Date</small>
         </div>
       </div>
-      <div class="col">
-        <div class="media-body">
-          <small class="text-muted">Owner</small>
-        </div>
+      <div class="col-3">
+          <small class="font-weight-bold text-light">Owner</small>
       </div>
-      <div class="col">
-        <div class="media-body">
-          <small class="text-muted">Title</small>
-        </div>
-      </div>
-      <div class="col">
-        <div class="media-body">
-          <small class="text-muted">Reason and impact</small>
-        </div>
+      <div class="col-6">
+          <small class="font-weight-bold text-light">Title and description of the change</small>
       </div>
     </div>
   </div>
 </div>
-<article class="media content-section">
+<article class="content-section">
   <div class="container-fluid">
     <div class="row mx-0">
-      <div class="col">
+      <div class="col-3">
         <div class="media-body">
-          <small class="font-weight-light ">{{ post.date_posted }}</small>
+          <small class="font-weight-normal">{{ post.date_posted }}</small>
         </div>
       </div>
-      <div class="col">
-        <div class="media-body">
+      <div class="col-3">
           <small class="text-muted">{{ post.author }}</small>
-        </div>
       </div>
-      <div class="col">
-        <div class="media-body">
+      <div class="col-6">
           <small class="text-muted">{{ post.title }}</small>
-        </div>
-      </div>
-      <div class="col">
-        <div class="media-body">
-          <small class="text-muted">{{ post.content }}</small>
-        </div>
       </div>
     </div>
   </div>
