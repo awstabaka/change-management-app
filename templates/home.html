@@ -6,14 +6,14 @@
     <div class="row mx-0">
       <div class="col-3">
         <div>
-          <small class="font-weight-bold text-light">Date</small>
+          <normal class="text-light">Date</normal>
         </div>
       </div>
       <div class="col-3">
-          <small class="font-weight-bold text-light">Owner</small>
+          <normal class="text-light">Owner</normal>
       </div>
       <div class="col-6">
-          <small class="font-weight-bold text-light">Title and description of the change</small>
+          <normal class="text-light">Title and description of the change</normal>
       </div>
     </div>
   </div>
@@ -23,14 +23,18 @@
     <div class="row mx-0">
       <div class="col-3">
         <div class="media-body">
-          <small class="font-weight-normal">{{ post.date_posted }}</small>
+          {{ post.date_posted }}
         </div>
       </div>
       <div class="col-3">
-          <small class="text-muted">{{ post.author }}</small>
+        <div class="media-body">
+          {{ post.author }}
+        </div>
       </div>
       <div class="col-6">
-          <small class="text-muted">{{ post.title }}</small>
+        <div class="media-body">
+          {{ post.title }}
+        </div>
       </div>
     </div>
   </div>
