@@ -1,43 +1,43 @@
 {% extends "layout.html" %}
 {% block content %}
-    {% for post in posts %}
+{% for post in posts %}
 <div class="media content-section">
-  <div class="container-fluid">
-    <div class="row mx-0">
-      <div class="col-3">
-        <div>
-          <normal class="text-light">Date</normal>
+    <div class="container-fluid">
+        <div class="row mx-0">
+            <div class="col-3">
+                <div>
+                    <normal class="text-light">Date</normal>
+                </div>
+            </div>
+            <div class="col-3">
+                <normal class="text-light">Owner</normal>
+            </div>
+            <div class="col-6">
+                <normal class="text-light">Title and description of the change</normal>
+            </div>
         </div>
-      </div>
-      <div class="col-3">
-          <normal class="text-light">Owner</normal>
-      </div>
-      <div class="col-6">
-          <normal class="text-light">Title and description of the change</normal>
-      </div>
     </div>
-  </div>
 </div>
 <article class="content-section">
-  <div class="container-fluid">
-    <div class="row mx-0">
-      <div class="col-3">
-        <div class="media-body">
-          {{ post.date_posted }}
+    <div class="container-fluid">
+        <div class="row mx-0">
+            <div class="col-3">
+                <div class="media-body">
+                    {{ post.date_posted }}
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="media-body">
+                    {{ post.author }}
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="media-body">
+                    {{ post.title }}
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-3">
-        <div class="media-body">
-          {{ post.author }}
-        </div>
-      </div>
-      <div class="col-6">
-        <div class="media-body">
-          {{ post.title }}
-        </div>
-      </div>
     </div>
-  </div>
 </article>
-    {% endfor %}
+{% endfor %}
 {% endblock content %}
