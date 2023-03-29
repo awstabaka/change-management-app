@@ -24,11 +24,6 @@ def home():
     return render_template("home.html", title="Home", posts=posts)
 
 
-@app.route('/history')
-def history():
-    return render_template("history.html", title="About")
-
-
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     if current_user.is_authenticated:
