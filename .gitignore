@@ -22,4 +22,4 @@ htmlcov/
 .coverage.*
 *,cover
 instance/
-
+main/static/profile_pics/
