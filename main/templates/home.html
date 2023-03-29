@@ -1,43 +1,15 @@
 {% extends "layout.html" %}
 {% block content %}
-{% for post in posts %}
-<div class="media content-section">
-    <div class="container-fluid">
-        <div class="row mx-0">
-            <div class="col-3">
-                <div>
-                    <normal class="text-light">Date</normal>
-                </div>
+    {% for post in posts %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="#">{{ post.author }}</a>
+              <small class="text-muted">{{ post.date_posted }}</small>
             </div>
-            <div class="col-3">
-                <normal class="text-light">Owner</normal>
-            </div>
-            <div class="col-6">
-                <normal class="text-light">Title and description of the change</normal>
-            </div>
-        </div>
-    </div>
-</div>
-<article class="content-section">
-    <div class="container-fluid">
-        <div class="row mx-0">
-            <div class="col-3">
-                <div class="media-body">
-                    {{ post.date_posted }}
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="media-body">
-                    {{ post.author }}
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="media-body">
-                    {{ post.title }}
-                </div>
-            </div>
-        </div>
-    </div>
-</article>
-{% endfor %}
+            <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
+            <p class="article-content">{{ post.content }}</p>
+          </div>
+        </article>
+    {% endfor %}
 {% endblock content %}
